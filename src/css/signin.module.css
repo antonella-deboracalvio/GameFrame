@@ -1,0 +1,127 @@
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.732);
+  background-image: url('/public/log.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: white;
+  padding: 2rem;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(35, 35, 35, 0.75);
+  border-radius: 8px;
+  display: flex;
+  overflow: hidden;
+}
+
+.formSection {
+  flex: 1;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.socialSection {
+  flex: 1;
+  padding: 2rem;
+  background-color: rgba(45, 45, 45, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.authInput {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+}
+
+.authInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.authButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.authLinks {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.authLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.socialText {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.gitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1b2838;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+  .formContainer{
+      flex-direction: column;
+      max-width: 400px;
+  }
+
+  .formSection,
+  .socialSection {
+      width: 100%;
+      max-width: none;
+      padding: 1.5rem;
+  }
+
+  .socialSection {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+
+}

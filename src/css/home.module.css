@@ -1,0 +1,30 @@
+.header-panel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #3d7587, #94475f);
+    padding: 20px 15px;
+   width: 900px;
+   height: 300px;
+    border-radius: 10px;
+    margin: 0 auto 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+  
+  }
+  
+  .header-title {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-subtitle {
+    font-size: 1rem;
+    color: #f7f7f7;
+    margin: 5px 0 0;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }

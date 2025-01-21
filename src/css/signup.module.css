@@ -1,0 +1,121 @@
+
+.registerContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.732);
+  background-image: url('/public/reg.jpg');
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: white;
+
+}
+
+.registerForm {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.authInput {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+}
+
+.authInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.authButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.authLinks {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.authLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.socialLogin {
+  flex: 1;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socialText {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  
+}
+
+.gitButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1b2838;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.gitIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.terms {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}

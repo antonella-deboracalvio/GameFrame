@@ -1,0 +1,25 @@
+.loading-container {
+    bottom: 0 !important;
+    padding: 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .loading-spinner {
+    width: 3rem;
+    height: 3rem;
+    justify-content: center !important;
+    align-items: center !important;
+
+
+  }
+  
+  .loading-text {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+  

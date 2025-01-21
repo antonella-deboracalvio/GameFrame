@@ -1,0 +1,67 @@
+.formWidget {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #bbbbbb;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background-color: #2c2c2c;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .input:disabled {
+    background-color: #3a3a3a;
+    color: #999999;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .button:disabled {
+    background-color: #888888;
+    cursor: not-allowed;
+  }
+  
+  .button.secondary {
+    background-color: #f44336;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .primary {
+    background-color: #007bff;
+  }
+  
+  .primary:hover {
+    background-color: #0056b3;
+  }
+  

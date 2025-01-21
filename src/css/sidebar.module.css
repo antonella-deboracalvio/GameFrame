@@ -1,0 +1,47 @@
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #151515 !important ;
+  color: #da2222;
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.navLink {
+  color: #b3b3b3;
+  font-size: 14px;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+
+.navDropdown {
+  margin-top: 10px;
+}
+
+.navDropdown .dropdown-menu {
+  background-color: #151515 !important;
+  border: none;
+}
+
+
+.toggle {
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+/* .bi{
+  display: flex;
+  justify-content: center;
+} */

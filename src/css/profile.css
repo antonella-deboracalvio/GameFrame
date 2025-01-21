@@ -1,0 +1,30 @@
+
+.nav-item .nav-link {
+    color: white ;
+    background-color:#cccccc1f!important;
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    border: none !important;
+  }
+  
+  .navtem .nav-link.active, 
+  .nav-item .nav-link:focus, 
+  .nav-item .nav-link:hover {
+    background-color:#2a282865 !important; 
+    color: white !important;
+   border: none !important;
+
+  }
+  
+  .nav-item {
+    margin-right: 10px; 
+  }
+  
+  .nav-item .nav-link {
+    color: #333;
+  }
+  ul {
+    list-style-type: none;
+    margin-top: 10px;
+  }
