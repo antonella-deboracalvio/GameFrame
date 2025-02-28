@@ -52,3 +52,193 @@
     color:white!important;
     margin-right: 50px;
 }
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.mobile-sidebar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+       margin-bottom: 10px;
+       font-size: 15px;
+       margin-left: 10px;
+    }
+    .menuToggle {
+        display: block;
+    }
+
+    .mobile-sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        background-color: #151515;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1050;
+        overflow-y: auto;
+        padding: 70px 20px 20px 20px;
+    }
+
+    .mobile-sidebar.active {
+        transform: translateX(0);
+    }
+
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1040;
+    }
+
+    .mobile-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .mobile-nav-link {
+        color: #b3b3b3;
+        font-size: 16px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-nav-link:hover {
+        color: #ffffff;
+    }
+
+    .mobile-section {
+        margin-bottom: 25px;
+    }
+
+    .mobile-section h3 {
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+
+    .mobile-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .mobile-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mobile-item-image {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .mobile-item a {
+        color: #b3b3b3;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .mobile-item a:hover {
+        color: #ffffff;
+    }
+
+    .mobile-toggle {
+        background: none;
+        border: none;
+        color: #b3b3b3;
+        cursor: pointer;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-toggle:hover {
+        color: #ffffff;
+    }
+}
+
+
+/* 
+offcanvas */
+
+/* Offcanvas - Effetto vetro scuro con testo chiaro */
+.offcanvas {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Background scuro e traslucido */
+    backdrop-filter: blur(10px); /* Aggiungi sfocatura per l'effetto vetro */
+    color: #ddd; /* Colore del testo grigio chiaro */
+    border-radius: 10px; /* Bordo arrotondato per un effetto più morbido */
+}
+.btnclose:hover{
+    color: #ffffff!important;
+}
+/* Link della nav nell'offcanvas */
+.offcanvas .navLink {
+    font-size: 16px;
+    color: #ddd; /* Colore del testo chiaro */
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.offcanvas .navLink:hover {
+    background-color: #444; /* Colore di sfondo al passaggio del mouse */
+    border-radius: 5px;
+}
+
+/* Stile per i bottoni nell'offcanvas */
+.offcanvas .buttonLink {
+    font-size: 14px;
+    color: #007bff; /* Colore blu per il bottone */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.offcanvas .buttonLink:hover {
+    background-color: #ddd; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+/* Menu toggle (icona del menu) nell'offcanvas */
+.menuToggle {
+    font-size: 30px;
+    color: #ddd; /* Colore dell'icona chiaro */
+}
+
+.searchContainer{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .nav{
+        margin-top: 0px;
+    }
+    .inputGroup{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}

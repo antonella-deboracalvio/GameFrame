@@ -29,3 +29,38 @@
   object-fit: cover;
   border-radius:5px 5px 5px 5px !important;
 }
+
+@media (max-width: 1024px) {
+  .backgroundDark {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cardCustom {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .backgroundDark {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardCustom {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardCustom {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .cardImage {
+    height: 180px;
+  }
+}

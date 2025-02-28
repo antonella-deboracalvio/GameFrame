@@ -11,6 +11,7 @@ body{
     font-family: "Open Sans", sans-serif;
     color: aliceblue;
     
+    
   }
 
   ul{
@@ -41,4 +42,43 @@ a:hover{
     background-color: #151515 !important; ;
     color: #ffffff;
     font-family: Arial, sans-serif;
+}
+
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
 }

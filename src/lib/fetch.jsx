@@ -28,6 +28,7 @@ export async function preLoaderFilters() {
     return { genres, platforms }; 
   } catch (error) {
     console.error(error);
+    return { genres: [], platforms: [] };
   }
 
 }

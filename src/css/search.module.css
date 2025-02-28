@@ -1,7 +1,4 @@
-/* .searchContainer {
-    position: relative;
-    width: 100%;
-  } */
+
 
 .searchContainer {
   display: flex;
@@ -119,3 +116,62 @@
   .dropdownContainer::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+  
+
+  
+@media (max-width: 768px) {
+  .searchContainer {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .searchInput {
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  .dropdownContainer {
+    width: 90%; /* Occupa il 90% dello schermo per adattarsi meglio */
+    left: 5%; /* Centra il dropdown */
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchInput {
+    border-radius: 15px !important; /* Riduci il border-radius per schermi piccoli */
+    font-size: 14px; /* Rendi il testo più piccolo */
+    padding: 6px 10px;
+  }
+
+  .dropdownContainer {
+    width: 100%;
+    left: 0;
+    max-height: 300px; /* Riduci altezza per evitare scrolling eccessivo */
+  }
+
+  .item {
+    padding: 6px 10px;
+  }
+
+  .gameImage {
+    width: 30px;
+    height: 30px;
+  }
+
+  .gameName {
+    font-size: 0.8rem;
+  }
+
+  .gameMetadata {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 720px) {
+    .searchContainer {
+      display: flex;
+    margin-left: 20px !important;
+    }
+  
+}

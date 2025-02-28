@@ -45,3 +45,64 @@
   display: flex;
   justify-content: center;
 } */
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 250px; /* Più grande per mobile */
+    height: 100vh;
+    z-index: 1000;
+    background-color: #151515;
+    padding-top: 60px; /* Spazio per il bottone hamburger */
+  }
+
+  /* Mostra la sidebar quando è attiva */
+  .sidebar.active {
+    transform: translateX(0);
+  }
+}
+
+/* Link della sidebar */
+.navLink {
+  color: #b3b3b3;
+  font-size: 14px;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+/* Menu dropdown */
+.navDropdown {
+  margin-top: 10px;
+}
+
+.navDropdown .dropdown-menu {
+  background-color: #151515 !important;
+  border: none;
+}
+
+/* Bottone per aprire la sidebar */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  z-index: 1100;
+}
+
+/* Mostra il bottone su mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+

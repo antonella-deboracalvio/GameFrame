@@ -14,8 +14,14 @@ function Sidebar() {
   const session = useContext(SessionContext);
   const { username, avatar_url } = useProfile();
 
-  const { genres, platforms } = useLoaderData();
-  //  console.log('LOADER:', useLoaderData());
+ // Controllo che useLoaderData() non sia undefined
+  const data = useLoaderData() || { genres: [], platforms: [] };
+
+  // Destrutturo solo se i dati sono disponibili
+  const genres = data.genres || [];
+  const platforms = data.platforms || [];
+
+  console.log("LOADER:", data); // Debug
 
   const maxVisibleOnExpand = 10;
   const alwaysVisibleCount = 3;
@@ -56,6 +62,7 @@ function Sidebar() {
     "Nintendo DS": "bi-nintendo-switch",
   };
 
+  
 
 
 
@@ -63,7 +70,7 @@ function Sidebar() {
 
 
   return (
-    <div className={sidebar.sidebar}>
+    <div className={`${sidebar.sidebar}`} >
       <Nav className='flex-column'>
 
         {session ? (

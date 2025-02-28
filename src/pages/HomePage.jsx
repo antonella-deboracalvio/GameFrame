@@ -49,10 +49,12 @@ function HomePage() {
 
   return (
     <div className="containerHomepage">
+      <div className={home["mobileHeader"]}>
       <h1 style={{ display: "flex", justifyContent: "center", height: "50px", marginTop: "40px" }}>New and trending</h1>
       <h6 style={{ display: "flex", justifyContent: "center", height: "50px", marginBottom: "40px" }}>The best games, right now</h6>
+      </div>
      
-        <div className={home["header-panel"]} bg-pink>
+        <div className={home["header-panel"]}>
       <h1 className={home["header-title"]}>Discover Amazing Games</h1>
       <p className={home["header-subtitle"]}>
         Explore genres, platforms, and top-rated games all in one place.
